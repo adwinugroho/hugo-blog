@@ -8,8 +8,7 @@ tags: ["golang basic",  "golang tutorial", "generate random string", "membuat hu
 toc: false
 author: "Adwin"
 ---
-
-di artikel sebelumnya kita sudah membahas bagaimana cara membuat [angka acak di golang](https://blog.cryppy.xyz/article/generate-random-number/), pada dasarnya sama, teorinya pun sama, kita hanya perlu mengganti _charset_ dan yang paling  penting adalah *parameter* dan *return value*-nya
+Di artikel sebelumnya kita sudah membahas bagaimana cara membuat [angka acak di golang](https://blog.cryppy.xyz/article/generate-random-number/), pada dasarnya sama, teorinya pun sama, kita hanya perlu mengganti _charset_ dan yang paling  penting adalah *parameter* dan *return value*-nya
 
 ```go
 import (

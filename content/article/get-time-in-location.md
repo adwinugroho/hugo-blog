@@ -8,7 +8,7 @@ tags: ["golang basic",  "golang tutorial", "time based on location", "waktu berd
 toc: false
 author: "adwin"
 ---
-di golang terdapat *built in package* **time** dimana kita bisa mendapatkan/memanipulasi waktu yang diperlukan, lengkapnya [time](https://pkg.go.dev/time). Untuk mendapatkan *format* waktu sesuai sama lokasi dimana kita berada, pertama panggil fungsi *time.LoadLocation("Asia/Jakarta")*.
+Di golang terdapat *built in package* **time** dimana kita bisa mendapatkan/memanipulasi waktu yang diperlukan, lengkapnya [time](https://pkg.go.dev/time). Untuk mendapatkan *format* waktu sesuai sama lokasi dimana kita berada, pertama panggil fungsi *time.LoadLocation("Asia/Jakarta")*.
 
 Sebagai tambahan kita panggil fungsi *time.Now.In*(dengan parameter *variable location*) yang telah kita definisikan sebelumnya, untuk mendapatkan waktu saat ini/waktu coding ini dijalankan.  
 ```go
