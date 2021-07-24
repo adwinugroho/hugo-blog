@@ -1,7 +1,7 @@
 ---
 title: "Golang - Get Time based on Location"
 date: 2021-07-20T22:03:09+08:00
-draft: true
+draft: false
 
 categories: ["Golang", "Tutorial"]
 tags: ["golang basic",  "golang tutorial", "time based on location", "waktu berdasarkan lokasi"]
