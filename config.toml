@@ -41,7 +41,7 @@ disqusShortname = "adwin"
   algolia_search    = false
   algolia_appId     = "CZEIJCAOAW"
   algolia_apiKey    = "86445834e5aa18d05d226517fc6a4ed6"
-  algolia_indexName = "prod-cryppy"
+  algolia_indexName = "dev-cryppy"
     # Set this option to false if you want to search within all articles in all languages at once
     algolia_currentLanguageOnly = true
 
