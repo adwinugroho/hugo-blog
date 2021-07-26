@@ -1,4 +1,4 @@
-title = "A Place We Can Learn and Share"
+title = "A Place We Can Learn."
 baseURL = "https://blog.cryppy.xyz/"
 theme = "bilberry-hugo-theme"
 
@@ -28,7 +28,7 @@ disqusShortname = "adwin"
 
   # Description and meta data for the search engines
   author = "Adwin"
-  description = "Build with A Mission."
+  description = "A Place We Can Learn."
   keywords = "blog,personal,software engineer,portfolio,golang,programming,tutorial"
 
   # How many articles should be displayed at once?
@@ -68,18 +68,18 @@ disqusShortname = "adwin"
     overlayIcon = "fa-home"
 
     # always display the top navigation (with pages and search) on non-mobile screens
-    permanentTopNav = true
+    permanentTopNav = false
 
     # always display the top navigation when scrolling
     # works only with permanentTopNav = true
-    stickyNav = true
+    stickyNav = false
 
     # show a language chooser in the header
-    showHeaderLanguageChooser = true
+    showHeaderLanguageChooser = false
 
   # Content configuration
     # Enable an optional pinned page to display at the top of the index
-    # pinnedPost = "/article/installing-bilberry-theme/"
+    pinnedPost = "/status/version-2-2-0-released"
     # Set to true to pin only to the first page, false to all pages
     # pinOnlyToFirstPage = true
 
@@ -92,7 +92,7 @@ disqusShortname = "adwin"
     dateFormat = "2006-01-02"
 
     # display the estimated reading time for an article
-    showReadingTime = false
+    showReadingTime = true
 
     # Minimum word count to display the Table of Contents
     tocMinWordCount = 400
@@ -109,7 +109,7 @@ disqusShortname = "adwin"
     amountCategoriesInFooter = 7
 
     # show a language chooser in the footer
-    showFooterLanguageChooser = true
+    showFooterLanguageChooser = false
 
     # social media profile urls for the footer links
     showSocialMedia = true
@@ -125,7 +125,7 @@ disqusShortname = "adwin"
     ]
 
     # credits line configuration
-    copyrightBy = "by Adwin theme by Lednerb"
+    copyrightBy = "Made by ❤"
     copyrightUseCurrentYear = false  # set to true to always display the current year in the copyright
     copyrightYearOverride = "2021"
     copyrightUrl = "https://github.com/Lednerb"
