@@ -1,5 +1,5 @@
 ---
-title: "Generate Random String"
+title: "Golang - Generate Random String"
 date: 2021-07-03T18:51:34+08:00
 draft: false
 
