@@ -79,7 +79,7 @@ disqusShortname = "adwin"
 
   # Content configuration
     # Enable an optional pinned page to display at the top of the index
-    pinnedPost = "/status/version-2-2-0-released"
+    pinnedPost = ""
     # Set to true to pin only to the first page, false to all pages
     # pinOnlyToFirstPage = true
 
