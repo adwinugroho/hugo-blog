@@ -24,7 +24,8 @@ Here are a few technologies mostly I use on daily basis:
 
 * Go                                    
 * Python                                              
-* R                                                     
+* R
+* PHP                                                     
 * CSS, HTML & JavaScript    
 
 
@@ -36,6 +37,7 @@ Here are a few technologies mostly I use on daily basis:
 * Nats.io (message broker)
 * Docker
 * Django
+* PHP Laravel
 
 
 **Tools**

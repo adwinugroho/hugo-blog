@@ -32,3 +32,9 @@ Prediction of fertility in women using State-Space modeling based on Basal Body 
 **R with Rstudio**
 
 The implementation of C50 algorithm in this project is used for analyze the amount of oxygen and human heart rate. Where there are many estimates of factors that cause heart disease in humans accompanied by increasing age. Therefore this algorithm discusses oxygen levels and heart rates. The C50 algorithm is implemented with R programming language and Rstudio.
+
+### 2020
+#### Go Collection
+**Go Programming Language**
+
+A list of awesome Go that I created for helping in work, like a, generate a random string, count ages, calculate the date, reverse the array, generate CSV, implement 3rd party package like Redis, and many more. It will be always updated! [go to repository](https://github.com/adwinugroho/go-collection)
