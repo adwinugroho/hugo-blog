@@ -8,4 +8,4 @@ tags: ["golang basic",  "golang tutorial",]
 toc: false
 author: "Adwin"
 ---
-Sebelum kesini ada baiknya untuk liat ["artikel ini"](https://blog.cryppy.xyz/)
+Sebelum kesini ada baiknya untuk liat ["artikel ini"](https://blog.cryppy.xyz/get-time-in-location)
