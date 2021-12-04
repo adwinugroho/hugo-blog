@@ -12,4 +12,21 @@ toc: false
 author: "adwin"
 ---
 
-Now, I am a backend developer based in Tangerang, Indonesia for Diacon Medica Tech. A guy who loves to creating a REST for both mobile and front-end developers. I enjoy working in the health care technology industry.
+Now, I am a middle Backend Developer based in Tangerang, Indonesia for Diacon Medica Tech. A guy who loves to creating a REST for both mobile and front-end developers. I enjoy working in the health care technology industry.
+
+### 2021
+#### Diacon Medica Technologies
+- Create REST API with other API such a NodeBB (community CMS), midtrans (payment), sendgrid (email gateway), verihubs (sms gateway)
+- Working with SDK like a AWS SDK or Firebase SDK
+- Working on vital services like transaction, hub etc.
+- Create a clean architecture for GoLang
+
+### 2020
+#### Diacon Medica Technologies
+- Transform services from nodeJS to Go
+- Create a REST API services for mobile and front end, like a billing, banner, product, back office demo, authentication, etc
+
+### 2018
+#### Internship - Gumcode Malang
+- Create and fixed some modules in MangJek project
+- Create email form in company profile page
