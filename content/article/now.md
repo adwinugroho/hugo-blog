@@ -17,6 +17,7 @@ Now, I am a middle Backend Developer based in Tangerang, Indonesia for Diacon Me
 ### 2022
 #### Diacon Medica Technologies
 - Working on vital services & become a code reviewer
+- Working on project who used fully documentation with swagger & godoc/jsdoc
 
 ### 2021
 #### Diacon Medica Technologies
