@@ -12,7 +12,7 @@ toc: false
 author: "adwin"
 ---
 
-Now, I am a middle Backend Developer based in Tangerang, Indonesia for Diacon Medica Tech. A guy who loves to creating a REST for both mobile and front-end developers. I enjoy working in the health care technology industry.
+Software Engineer with 2+ years of experience, I have focused on developing scalable microservices with Google Language (GoLang). I am eager to solve real-life problems, enjoy researching, and improved with new technologies.
 
 ### 2022
 #### Diacon Medica Technologies
