@@ -7,10 +7,26 @@ showDate: false
 # set the html target parameter if you want to change default behavior
 target: "_blank"
 ---
+### 2021 
+#### Competition
+**HACKATHON 3.0 "UMKM Samarinda Bangkit ditengah pandemi menuju penciptaan 10.000 Wira Usaha (StartUp)"**
+Top 10
 
-### 2020
+### 2020 - November
 #### Certification
-**DQLab Academy - Data Science with R**
+**DQLab Academy - Data Visualization in Data Science using R**
+![See it](/image/content/page/awards/certificate-Data-Visualization-in-Data-Science-using-R.pdf)
+
+
+### 2020 - October
+#### Certification
+**DQLab Academy - Statistics using R for Data Science**
+![See it](/image/content/page/awards/certificate-Statistics-using-R-for-Data-Science.pdf)
+
+### 2020 - September
+#### Certification
+**DQLab Academy - R Fundamental For Data Science**
+![See it](/image/content/page/awards/certificate-R-Fundamental-for-Data-Science.pdf)
 
 
 ### 2019
