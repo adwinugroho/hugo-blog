@@ -12,7 +12,7 @@ Ga kayak di javascript (JS) kita bisa memapulasi data banyak dengan *library* ba
 
 note: di golang ada yang menyebut *array* itu *slice* atau mungkin keduanya dibedakan, hanya saja saya tidak terbiasa dengan hal itu. Bila kamu ingin mendalami lebih lanjut sebenernya emang *array* dan *slice* di golang itu berbeda.
 
-Sebenernya di golang juga banyak kok *library* bawaan *unfortunately* di golang tuh salah satu yang paling penting dan pasti dipakai apabila kita banyak bermain dengan data yaitu *remove array element* di golang tuh ga ada. Ada banyak cara sebenernya nge-*remove array element* di golang salah satunya berikut ini:
+Di golang juga banyak kok *library* bawaan *unfortunately* di golang tuh salah satu yang paling penting dan pasti dipakai apabila kita banyak bermain dengan data yaitu *remove array element* ga ada. Ada banyak cara sebenernya nge-*remove array element* di golang salah satunya berikut ini:
 ```go
 // AddNewElementWithoutRedudancy always return newData in last index
 func AddNewElementWithoutRedudancy(datas []string, newData string) []string {
