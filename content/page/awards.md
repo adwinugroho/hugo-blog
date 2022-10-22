@@ -15,18 +15,18 @@ Top 10
 ### 2020 - November
 #### Certification
 **DQLab Academy - Data Visualization in Data Science using R**
-![See it](/image/content/page/awards/certificate-Data-Visualization-in-Data-Science-using-R.pdf)
+[See it!](/image/content/page/awards/certificate-Data-Visualization-in-Data-Science-using-R.pdf)
 
 
 ### 2020 - October
 #### Certification
 **DQLab Academy - Statistics using R for Data Science**
-![See it](/image/content/page/awards/certificate-Statistics-using-R-for-Data-Science.pdf)
+[See it!](/image/content/page/awards/certificate-Statistics-using-R-for-Data-Science.pdf)
 
 ### 2020 - September
 #### Certification
 **DQLab Academy - R Fundamental For Data Science**
-![See it](/image/content/page/awards/certificate-R-Fundamental-for-Data-Science.pdf)
+[See it!](/image/content/page/awards/certificate-R-Fundamental-for-Data-Science.pdf)
 
 
 ### 2019
