@@ -17,14 +17,18 @@ Di golang juga banyak kok *library* bawaan *unfortunately* di golang tuh salah s
 // AddNewElementWithoutRedudancy always return newData in last index
 func AddNewElementWithoutRedudancy(datas []string, newData string) []string {
 	var isNew bool
-	for i := range datas {
-		if datas[i] == newData {
-			datas = append(datas[:i], datas[i+1:]...)
-			datas = append(datas, newData)
-			isNew = false
-			break
-		} else {
-			isNew = true
+	if len(datas) == 0 {
+		isNew = true
+	} else {
+		for i := range datas {
+			if datas[i] == newData {
+				datas = append(datas[:i], datas[i+1:]...)
+				datas = append(datas, newData)
+				isNew = false
+				break
+			} else {
+				isNew = true
+			}
 		}
 	}
 	if isNew {
