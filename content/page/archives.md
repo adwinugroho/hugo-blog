@@ -12,9 +12,9 @@ draft: false
 * Golang - Generate Random Number [link](https://blog.cryppy.xyz/article/generate-random-number/)
 * Golang - Generate Random String [link](https://blog.cryppy.xyz/article/generate-random-string/)
 * Golang - Get Time based on Location [link](https://blog.cryppy.xyz/article/get-time-in-location/)
+* Golang - Julian Date [link](https://blog.cryppy.xyz/article/go-julian-date/)
 
 **What I Learned**
-
 * Redis Keyspace Notification [link](https://blog.cryppy.xyz/article/what-i-learned-redis-keyspace-notification/)
 
 **Random**
