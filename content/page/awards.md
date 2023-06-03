@@ -7,6 +7,11 @@ showDate: false
 # set the html target parameter if you want to change default behavior
 target: "_blank"
 ---
+### 2021
+#### Speaker
+**"TIPS AND TRICK TO BECOME BACKEND DEVELOPER" By Id Core Indonesia**
+[See it!](/image/content/page/awards/filecertificate_3316299562837449541_445.pdf)
+
 ### 2021 
 #### Competition
 **HACKATHON 3.0 "UMKM Samarinda Bangkit ditengah pandemi menuju penciptaan 10.000 Wira Usaha (StartUp)"**
