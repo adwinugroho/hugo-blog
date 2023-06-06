@@ -16,5 +16,6 @@ draft: false
 
 **What I Learned**
 * Redis Keyspace Notification [link](https://blog.cryppy.xyz/article/what-i-learned-redis-keyspace-notification/)
+* Sekilas Tentang Banking System [link](https://blog.cryppy.xyz/article/what-i-learned-sekilas-tentang-banking-system/)
 
 **Random**
