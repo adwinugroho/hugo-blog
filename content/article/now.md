@@ -12,7 +12,7 @@ toc: false
 author: "adwin"
 ---
 
-Software Engineer with 2+ years of experience, I have focused on developing scalable microservices with Google Language (GoLang). I am eager to solve real-life problems, enjoy researching, and improved with new technologies.
+Software Engineer with 3+ years of experience, I have focused on developing scalable microservices with Google Language (GoLang). I am eager to solve real-life problems, enjoy researching, and improved with new technologies.
 
 ### 2022
 #### Diacon Medica Technologies
