@@ -14,6 +14,11 @@ author: "adwin"
 
 Software Engineer with 3+ years of experience, I have focused on developing scalable microservices with Google Language (GoLang). I am eager to solve real-life problems, enjoy researching, and improved with new technologies.
 
+### 2023
+#### Diacon Medica Technologies
+- Working on vital services & become a code reviewer
+- Working on fintech projects & banking system
+
 ### 2022
 #### Diacon Medica Technologies
 - Working on vital services & become a code reviewer
