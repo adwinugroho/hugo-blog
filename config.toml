@@ -127,7 +127,7 @@ disqusShortname = "blogcryppy"
     # credits line configuration
     copyrightBy = "Made by ❤"
     copyrightUseCurrentYear = false  # set to true to always display the current year in the copyright
-    copyrightYearOverride = "2021"
+    copyrightYearOverride = "2024"
     copyrightUrl = "https://github.com/Lednerb"
     creditsText = "Bilberry Hugo Theme"
     creditsUrl = "https://github.com/Lednerb/bilberry-hugo-theme"
