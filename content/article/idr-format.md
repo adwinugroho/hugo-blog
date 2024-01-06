@@ -1,7 +1,7 @@
 ---
 title: "Golang - Formating Float to Currency (IDR) String"
 date: 2024-01-07T01:07:10+08:00
-draft: true
+draft: false
 
 categories: ["Golang", "Tutorial"]
 tags: ["golang basic",  "golang tutorial", "formatting float to currency idr string", "format mata uang dari float ke string"]
