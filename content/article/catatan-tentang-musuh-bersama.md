@@ -1,7 +1,7 @@
 ---
 title: "Catatan Tentang “Musuh Bersama”"
 date: 2024-01-13T23:24:31+08:00
-draft: true
+draft: false
 
 categories: ["Random", "Politik"]
 tags: ["random",  "politik", "ngalor ngidul"]
