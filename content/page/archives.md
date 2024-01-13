@@ -20,3 +20,4 @@ draft: false
 * Sekilas Tentang Banking System [link](https://blog.cryppy.xyz/article/what-i-learned-sekilas-tentang-banking-system/)
 
 **Random**
+* Catatan Tentang “Musuh Bersama” [link](https://blog.cryppy.xyz/article/catatan-tentang-musuh-bersama/)
