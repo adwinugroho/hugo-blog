@@ -32,10 +32,13 @@ Here are a few technologies mostly I use on daily basis:
 **Backend**
 
 * Go Echo Framework
+* Redis
+* Postgre SQLs
 * ArangoDB
 * MySQL
 * Nats.io (message broker)
 * Docker
+* Kubernates
 * Django
 * PHP Laravel
 
@@ -49,10 +52,9 @@ Here are a few technologies mostly I use on daily basis:
 
 **Currently learning**
 
+* AWS
 * R
 * Python
-* Redis
-* Postgree SQL
 * gRPC 
 * Cloud computing
 
