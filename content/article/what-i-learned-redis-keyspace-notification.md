@@ -2,6 +2,11 @@
 title: "What I Learned - Redis Keyspace Notification"
 date: 2022-10-22T22:58:14+07:00
 draft: false
+
+categories: ["TIL", "WIL", "Tutorial", "Research"]
+tags: ["golang basic",  "golang tutorial", "redis keyspace notification golang"]
+toc: false
+author: "adwin"
 ---
 Kenapa bukan Today I Learned? Ya biar ga mainstream aja haha.
 

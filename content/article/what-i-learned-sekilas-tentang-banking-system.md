@@ -2,6 +2,11 @@
 title: "What I Learned - Sekilas Tentang Banking System"
 date: 2023-06-06T00:04:20+08:00
 draft: false
+
+categories: ["TIL", "WIL", "Research"]
+tags: ["bank",  "banking system"]
+toc: false
+author: "adwin"
 ---
 Akhirnya jumpa lagi di edisi artikel **What I Learned**.
 
