@@ -7,6 +7,7 @@ draft: false
 **Tutorial**
 * Golang - Download With File Url [link](https://blog.cryppy.xyz/article/download-with-file-url/)
 * Golang - Add New Element Without Redudancy [link](https://blog.cryppy.xyz/article/add-new-element-without-redudancy/)
+* Golang - Parse String Time to Time [link](https://blog.cryppy.xyz/article/parse-string-time-to-time/)
 * Golang - Calculate Date By Ages [link](https://blog.cryppy.xyz/article/calculate_date_by_ages/)
 * Golang - Count Duplicate Element [link](https://blog.cryppy.xyz/article/count-duplicate-element/)
 * Golang - Generate Random Number [link](https://blog.cryppy.xyz/article/generate-random-number/)
