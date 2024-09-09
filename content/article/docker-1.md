@@ -41,3 +41,8 @@ docker run -it -d -e PORT=8073 -p 8083:8073 my-app-image
 ```bash
 docker container rm container_id
 ```
+
+- Untuk mencari *ip address* yang ada di dalam docker network
+```bash
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_name
+```
