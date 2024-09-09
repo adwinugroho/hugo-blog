@@ -16,7 +16,10 @@ Software Engineer with 3+ years of experience, I have focused on developing scal
 
 ### 2024
 #### Jubelio (PT Guardia Teknologi Indonesia)
-- Working on Jubelio Chat as a Backend Engineer Golang
+- Working on Jubelio Chat as a Backend Engineer using Golang.
+- Working on synchronizing Lazada Chat messages.
+- Creating a product sending feature for marketplaces such as Shopee, Lazada, Tokopedia, and TikTok.
+- Creating an integration of Jubelio Chat with TikTok.
 
 ### 2023
 #### Diacon Medica Technologies
