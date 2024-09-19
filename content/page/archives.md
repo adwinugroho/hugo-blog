@@ -22,3 +22,4 @@ draft: false
 
 **Random**
 * Catatan Tentang “Musuh Bersama” [link](https://blog.cryppy.xyz/article/catatan-tentang-musuh-bersama/)
+* A Story About Si Subur [link](https://blog.cryppy.xyz/article/the-story-about-si-subur/)
