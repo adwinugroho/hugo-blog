@@ -20,6 +20,7 @@ Software Engineer with 3+ years of experience, I have focused on developing scal
 - Working on synchronizing Lazada Chat messages.
 - Creating a product sending feature for marketplaces such as Shopee, Lazada, Tokopedia, and TikTok.
 - Creating an integration of Jubelio Chat with TikTok.
+- Working on Jubelio Shipment, creating service for generate bulk shipping labels from HTML to PDF.
 
 ### 2023
 #### Diacon Medica Technologies
