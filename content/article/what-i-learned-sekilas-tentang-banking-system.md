@@ -49,3 +49,5 @@ Istilah umum yang ada pada sistem perbankan yaitu:
     5. Macet, tunggakkan lebih dari 180 hari
 - **Bunga/Margin** untuk bank konvensional biasa ditampakan dalam bentuk % (*fixed* / *floating* mengikuti suku bunga Bank Indonesia). *Margin* lumrah dalam bank syariah biasa berupa nominal yang harus dibayarkan dan sudah jelas saat akad totalan *margin* sampai akhir masa pinjaman.
 - **Bagi Hasil/Profit Sharing** merupakan jenis akad pinjaman pada bank syariah dimana *margin* dijadikan sebagai bagi hasil
+- **PKS (Perjanjian Kerja Sama)** dokumen hukum legal yang mengikat dua pihak atau lebih untuk melakukan suatu proyek, bisnis, atau pelayanan bersama.
+- **Rekonsiliasi** proses mencocokkan saldo kas yang tercatat dalam buku besar perusahaan dengan saldo yang tercatat pada laporan bank atau rekening koran.
