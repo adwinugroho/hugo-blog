@@ -11,7 +11,7 @@ One of the hardest part is building TCP Socket Client to listen to the data stre
 
 ![PPMS - Alat P6100](/image/content/article/the-story-about-ppms/image-1.png)
 
-The communication between raspberryPI and P6100 using bluetooth. The patient is wearing the sensors and the data is sent to the doctor's web application. The doctor can monitor the patient's vitals in real-time. The doctor can also set the patient's vitals to a certain level and if the patient's vitals go above or below the set level, the doctor will be notified.
+The communication between raspberryPI and P6100 using bluetooth. The patient is wearing the sensors and the data is sent to the health worker's web application. The doctor can monitor the patient's vitals in real-time. The doctor can also set the patient's vitals to a certain level and if the patient's vitals go above or below the set level, the emergency doctor will be notified.
 
 ![PPMS - Login Page](/image/content/article/the-story-about-ppms/image-2.png)
 
@@ -75,3 +75,15 @@ with open('/Documents/PPMS/'+datetime_file+'.txt', 'a') as f:
 sock.close()
 f.close()
 ```
+
+if you successfully log, here is the view of the dashboard as you can see on main dashboard there's profile of RS UMM. Then, you can input medical record of patient with static vehicle license number from login.
+
+![PPMS - Dashboard Page](/image/content/article/the-story-about-ppms/image-3.png)
+
+Finally, PPMS have an optional feature like print the data too, because we are think RS (hospital) and human (nakes) must have a marked as a printable data. It's important for humanize and user experiences. At the end of the day I think system like PPMS need more rise especially in the of age AI, we should do more important things at healthcare and solved many problems on disaeases. Hopefully!
+
+Thanks to:
+- Allah Azza wa Jalla
+- Ibu Diah Risqiwati, ST., MT
+- Bapak Hanugra Aulia Sidharta, ST., MT
+- All of Civitas Academica.
