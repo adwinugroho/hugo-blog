@@ -1,7 +1,12 @@
 ---
-title: "A Story About PPMS"
+title: "The Story About PPMS"
 date: 2026-09-21T12:54:55+07:00
 draft: false
+
+categories: ["Random", "Story"]
+tags: ["random",  "story", "cerita", "project"]
+toc: false
+author: "Adwin"
 ---
 Portable Patient Monitoring System, a.k.a PPMS, was my lecturer’s project funded by IEEE. It was a collaborative agreement between Institut Teknologi Sepuluh Nopember (ITS) and Hospital University of Muhammadiyah Malang (RS UMM).
 

@@ -1,7 +1,12 @@
 ---
-title: "A Story About Si Subur"
+title: "The Story About Si Subur"
 date: 2024-09-09T14:06:50+07:00
 draft: false
+
+categories: ["Random", "Story"]
+tags: ["random",  "story", "cerita", "project"]
+toc: false
+author: "Adwin"
 ---
 Assalamualaikum, Bismillah, hola, moshi-moshi.
 This is a system called "Si Subur." What does Si Subur mean? In Indonesia, "subur" means fertile, lush, or productive (synonyms include gemuk, gendut, etc.). The "fertility" I want to talk about in this article refers to human fertility.
@@ -15,4 +20,3 @@ We Indonesians love naming systems that start with "SI" when they are related to
 ___
 
 What makes this different from regular menstrual monitoring apps? The difference is in the device. I built a device similar to a thermometer, but the body temperature readings are automatically displayed on the system I developed. So, Si Subur essentially consists of two interconnected devices.
-
