@@ -1,22 +1,22 @@
 ---
 title: "A Story About PPMS"
 date: 2026-09-21T12:54:55+07:00
-draft: true
+draft: false
 ---
-Portable Patient Monitory System a.k.a PPMS is a my lectures project for IEEE funding. The agremeent project between Institut Teknologi Sepuluh Nopember (ITS) and Hospital University of Muhammadiyah Malang (RS UMM). 
+Portable Patient Monitoring System, a.k.a PPMS, was my lecturer’s project funded by IEEE. It was a collaborative agreement between Institut Teknologi Sepuluh Nopember (ITS) and Hospital University of Muhammadiyah Malang (RS UMM).
 
-I was assigned as a web developer who integrated the hardware (raspberyPI) of the system into a web application. The system has 4 sensors : ECG, SpO2, Temperature, Blood Pressure. I build this system with Python Django and use free template dashboard for the admin & auth page. This project is my very first real project that use RaspberryPI. At that time, I only familiar with web development, but I never touch RaspberryPI before. My supervisor recommend me to try this project, because it will expand my skills. 
+I was assigned as the web developer responsible for integrating the hardware (Raspberry Pi) into a web application. The system utilized four sensors: ECG, SpO2, Temperature, and Blood Pressure. I built this system using Python Django and used a free dashboard template for the admin and auth pages. This project was my very first real experience with Raspberry Pi. At that time, I was only familiar with web development and had never touched a Raspberry Pi before. My supervisor recommended this project to me because it would expand my skill set.
 
-One of the hardest part is building TCP Socket Client to listen to the data stream from RaspberryPI. Because at that time, I never touch TCP Socket before. I need to learn it from scratch. So, PPMS used Berry P6100 to get stream vital sign data from patient such a SpO2, Heartrate, Systole, Diastole, Respiratory, and Temperature.
+One of the hardest parts was building a TCP Socket Client to listen to the data stream from the Raspberry Pi, mostly because I had never worked with TCP Sockets before. I had to learn it from scratch. The PPMS used a Berry P6100 device to get vital sign data streams from patients, such as SpO2, Heart Rate, Systole, Diastole, Respiratory Rate, and Temperature.
 
 ![PPMS - Alat P6100](/image/content/article/the-story-about-ppms/image-1.png)
 
-The communication between raspberryPI and P6100 using bluetooth. The patient is wearing the sensors and the data is sent to the health worker's web application. The doctor can monitor the patient's vitals in real-time. The doctor can also set the patient's vitals to a certain level and if the patient's vitals go above or below the set level, the emergency doctor will be notified.
+The communication between the Raspberry Pi and the P6100 used Bluetooth. The patient wears the sensors, and the data is sent to the health worker's web application. Doctors can monitor the patient's vitals in real-time. They can also set threshold levels for the patient's vitals; if the values go above or below these set levels, the emergency doctor gets notified.
 
 ![PPMS - Login Page](/image/content/article/the-story-about-ppms/image-2.png)
 
-However, on this project my task is simple, I have to develop retriving data from raspberyPI into python and display that on my web application. So, user need to know the mac address bluetooth then have to login with name, mac address, port, and license number (if they are with ambulance).
-On example below my python code to gather data from.
+My task in this project was straightforward: retrieve data from the Raspberry Pi using Python and display it on the web application. Users needed to know the Bluetooth MAC address and log in with their name, MAC address, port, and license number (if they were with an ambulance).
+Below is an example of my Python code for gathering the data:
 
 ```python
 import bluetooth
@@ -76,11 +76,12 @@ sock.close()
 f.close()
 ```
 
-if you successfully log, here is the view of the dashboard as you can see on main dashboard there's profile of RS UMM. Then, you can input medical record of patient with static vehicle license number from login.
+If you successfully log in, here is the view of the dashboard. As you can see on the main dashboard, there’s the RS UMM profile. Then, you can input the patient's medical record along with the static vehicle license number from the login session.
 
 ![PPMS - Dashboard Page](/image/content/article/the-story-about-ppms/image-3.png)
 
-Finally, PPMS have an optional feature like print the data too, because we are think RS (hospital) and human (nakes) must have a marked as a printable data. It's important for humanize and user experiences. At the end of the day I think system like PPMS need more rise especially in the of age AI, we should do more important things at healthcare and solved many problems on disaeases. Hopefully!
+Finally, PPMS has an optional feature to print the data. We believed that hospitals (RS) and healthcare workers (nakes) must have physical records. It’s important for humanizing the process and improving user experience.
+At the end of the day, I think systems like PPMS need to rise up, especially in the age of AI. We should focus on doing more important things in healthcare and solving many problems related to diseases. Hopefully!
 
 Thanks to:
 - Allah Azza wa Jalla
