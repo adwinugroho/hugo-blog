@@ -42,8 +42,8 @@ disqusShortname = "blogcryppy"
   algolia_appId     = "CZEIJCAOAW"
   algolia_apiKey    = "86445834e5aa18d05d226517fc6a4ed6"
   algolia_indexName = "dev-cryppy"
-    # Set this option to false if you want to search within all articles in all languages at once
-    algolia_currentLanguageOnly = true
+  # Set this option to false if you want to search within all articles in all languages at once
+  algolia_currentLanguageOnly = true
 
   # Enable / Disable comments on the articles via commento
   commentoJsURL = ""
@@ -118,7 +118,7 @@ disqusShortname = "blogcryppy"
     # all icons https://fontawesome.com/icons?d=gallery&m=free
     # brand icons https://fontawesome.com/icons?d=gallery&s=brands&m=free
     socialMediaLinks = [
-      { link = "https://twitter.com/adwinugroho", icon = "fab fa-twitter" },
+      { link = "https://twitter.com/adwinugroho", icon = "fab fa-x-twitter" },
       { link = "https://facebook.com/adwinugroho94", icon = "fab fa-facebook" },
       { link = "https://github.com/adwinugroho", icon = "fab fa-github" },
       { link = "https://www.linkedin.com/in/adwin-nugroho-siswoyo/", icon = "fab fa-linkedin" },
