@@ -96,8 +96,8 @@ func (r *MessageRepo) GetMessages(ctx context.Context, schemaName string, tenant
 You might be wondering, "What about PGX's AfterConnect hook?" Yes, you can configure the connection pool to automatically run `SET search_path` whenever a new physical connection is established. However, this is only safe if that specific pool is strictly dedicated to a single tenant. If you share that pool across multiple tenants dynamically, you are back to square one with race conditions. For a system with thousands of dynamic tenants, managing thousands of separate connection pools is a resource nightmare.
 
 When should we actually use search_path? Honestly, its best use cases are highly restricted:
-⋅⋅⋅⋅* Local Development: When you are debugging on your localhost and don't want to type tenant_123.table_name a hundred times.
-⋅⋅⋅⋅* Isolated Cron Jobs or Maintenance Scripts: For background jobs that run weekly or monthly (e.g., generating a specific tenant's monthly report), where the script explicitly sets the search_path for its own dedicated, short-lived connection, completely isolated from the main web application's connection pool.
+- Local Development: When you are debugging on your localhost and don't want to type tenant_123.table_name a hundred times.
+- Isolated Cron Jobs or Maintenance Scripts: For background jobs that run weekly or monthly (e.g., generating a specific tenant's monthly report), where the script explicitly sets the search_path for its own dedicated, short-lived connection, completely isolated from the main web application's connection pool.
 
 ### 2. Lesson Learned
 In the age of AI, the line between a "code monkey" and a real Software Engineer is being tested more than ever. Maybe you think LeetCode, HackerRank, or competitive programming isn't reliable. Maybe you are right, maybe you are wrong.
