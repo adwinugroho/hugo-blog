@@ -5,9 +5,9 @@ draft: false
 ---
 
 **Tutorial**
-* Golang - Download With File Url [link](https://blog.cryppy.id/article/download-with-file-url/)
-* Golang - Add New Element Without Redudancy [link](https://blog.cryppy.id/article/add-new-element-without-redudancy/)
-* Golang - Parse String Time to Time [link](https://blog.cryppy.id/article/parse-string-time-to-time/)
+* [Golang - Download With File Url](https://blog.cryppy.id/article/download-with-file-url/)
+* [Golang - Add New Element Without Redudancy](https://blog.cryppy.id/article/add-new-element-without-redudancy/)
+* [Golang - Parse String Time to Time](https://blog.cryppy.id/article/parse-string-time-to-time/)
 * Golang - Calculate Date By Ages [link](https://blog.cryppy.id/article/calculate_date_by_ages/)
 * Golang - Count Duplicate Element [link](https://blog.cryppy.id/article/count-duplicate-element/)
 * Golang - Generate Random Number [link](https://blog.cryppy.id/article/generate-random-number/)
