@@ -12,7 +12,30 @@ toc: false
 author: "adwin"
 ---
 
-Software Engineer with 3+ years of experience, I have focused on developing scalable microservices with Google Language (GoLang). I am eager to solve real-life problems, enjoy researching, and improved with new technologies.
+Software Engineer with 5+ years of experience, I have focused on developing scalable microservices with Google Language (GoLang). I am eager to solve real-life problems, enjoy researching, and improved with new technologies.
+
+### 2026
+#### Bank BRI (PT Indocyber Global Teknologi (IGLO))
+- Developed Partner Service to manage partner-related data and integrations within the Universal Biller System.
+- Developed Product Service to manage biller product data and support product-related operations.
+- Designed the database schema for the workflow submission process, applying loose coupling principles to separate submission management from core business services.
+- Implemented Kafka consumers to support asynchronous communication and integration between backend services and external systems.
+- Contributed to a microservices architecture using Go, PostgreSQL, Kafka, Redis, and GORM.
+
+### 2026
+#### Jubelio (PT Guardia Teknologi Indonesia)
+- Working on Jubelio Chat as a Backend Engineer using Golang.
+- Migrate from Supabase to Redis Server Side Events for real-time messaging.
+- Integrated Jubelio Chat with Sentiment and auto reply AI and multiple marketplace messaging platforms, including Shopee, Lazada, and TikTok Shop.
+
+### 2025
+#### Jubelio (PT Guardia Teknologi Indonesia)
+- Working on Jubelio Chat as a Backend Engineer using Golang.
+- Working on Jubelio Store Order Service to achieve response times of under 2 seconds.
+- Developed product and order synchronization features and integrated Supabase for real-time messaging.
+- Implemented marketplace-specific pagination, time-based message retrieval, and retry-with-delay handling for HTTP 429 responses to improve synchronization reliability.
+- Validated synchronization across 3 tenants with multiple marketplace stores per tenant, completing tests in under 15 minutes.
+- Developed Cart Service with Redis caching to improve performance and implemented asynchronous order consumers and notification systems via WhatsApp and email.
 
 ### 2024
 #### Jubelio (PT Guardia Teknologi Indonesia)

@@ -75,7 +75,7 @@ We all know connection pooling is a strategy to manage database connections for 
 
 ### Conclusion and Lessons Learned
 ### 1. Why it's crucial to understand the tools you're using
-We all know we can't survive without using a tech stack, whether it's open source, freemium, premium, or whatever you name it: Redis, PostgreSQL, jwt.io, Supabase, Kafka, MongoDB, etc. Maybe big companies like Google, Meta, or Apple use built-in libraries, or if they use open source, they customize it heavily.
+We all know we can't survive without using a tech stack, whether it's open source, freemium, premium, or whatever you name it: `Redis`, `PostgreSQL`, `jwt.io`, `Supabase`, `Kafka`, `MongoDB`, etc. Maybe big companies like Google, Meta, or Apple use built-in libraries, or if they use open source, they customize it heavily.
 
 We can't fully control what we use. Yeah, you're right, we can make an issue or submit PRs, but how much can we really do to fix that tech ourselves if we must customize it? All that matters is doing what we can: learning and deep-diving into the tech stack we use.
 
@@ -100,11 +100,9 @@ When should we actually use search_path? Honestly, its best use cases are highly
 - Isolated Cron Jobs or Maintenance Scripts: For background jobs that run weekly or monthly (e.g., generating a specific tenant's monthly report), where the script explicitly sets the search_path for its own dedicated, short-lived connection, completely isolated from the main web application's connection pool.
 
 ### 2. Lesson Learned
-In the age of AI, the line between a "code monkey" and a real Software Engineer is being tested more than ever. Maybe you think LeetCode, HackerRank, or competitive programming isn't reliable. Maybe you are right, maybe you are wrong.
-But we should learn how to think and how to implement, not just chase results that look extraordinary, perform well, or seem unbelievable on the surface. Because if you work in a big company and build vital services like fintech, payment gateways, banking apps, or just an app with millions of users, milliseconds matter. Every hour, every minute, even every second is important. Users' money must be safe, and the users are the core value of the business.
+In the age of AI, the line between a "code monkey" and a real Software Engineer is being tested more than ever. Maybe you think LeetCode, HackerRank, or competitive programming isn't reliable. Maybe you are right, maybe you are wrong. But we should learn how to think and how to implement, not just chase results that look extraordinary, perform well, or seem unbelievable on the surface. Because if you work in a big company and build vital services like fintech, payment gateways, banking apps, or just an app with millions of users, milliseconds matter. Every hour, every minute, even every second is important. **Users money must be safe**, and **the users are the core value of the business.**
 
-Well, what if I am just an "Indihacker"? We should ship more products, right? All that matters is the client, and the client only knows if the program works well or not. Yeah, you're right. Until you ship a premium product with payments, and you suddenly realize the payment gateway doesn't work well. Hopefully, we are not the ones causing that. Whatever you are—an Indihacker, a Vibecoder, a Software Engineer, or a a Fullstack Developer—please learn what you use, and stay curious!
+Well, what if I am just an "Indihacker"? We should ship more products, right? All that matters is the client, and the client only knows if the program works well or not. Yeah, you're right. Until you ship a premium product with payments, and you suddenly realize the payment gateway doesn't work well. Hopefully, we are not the ones causing that. Whatever you are an Indihacker, a Vibecoder, a Software Engineer, or a Fullstack Developer please learn what you use, and **stay curious!**
 
----
 References:
 [^1]: PostgreSQL: an introduction to search_path
