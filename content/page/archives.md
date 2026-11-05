@@ -5,7 +5,7 @@ draft: false
 ---
 
 **What I Learned**
-* [What I Learned: How a Small `search_path` Setting Can Break Your Multi-Schema Database](https://blog.cryppy.id/article/what-i-learned-psql-search-path-a-small-setting-that-can-break-your-multischema-database/)
+* [How a Small `search_path` Setting Can Break Your Multi-Schema Database](https://blog.cryppy.id/article/what-i-learned-psql-search-path-a-small-setting-that-can-break-your-multischema-database/)
 * [Redis Keyspace Notification](https://blog.cryppy.id/article/what-i-learned-redis-keyspace-notification/)
 * [Sekilas Tentang Banking System](https://blog.cryppy.id/article/what-i-learned-sekilas-tentang-banking-system/)
 
