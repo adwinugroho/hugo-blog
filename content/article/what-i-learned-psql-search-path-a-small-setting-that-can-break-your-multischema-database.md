@@ -1,5 +1,5 @@
 ---
-title: "What I Learned: How a Small `search_path` Setting Can Break Your Multi-Schema Database"
+title: "How a Small `search_path` Setting Can Break Your Multi-Schema Database"
 date: 2026-10-03T17:51:09+08:00
 draft: false
 
