@@ -1,106 +1,123 @@
 ---
-title: "The Story About Si Subur"
+title: "The Story About Si Subur: An IoT Journey into Fertility Tracking"
 date: 2024-09-09T14:06:50+07:00
-draft: true
+draft: false
 
 categories: ["Random", "Story"]
 tags: ["random",  "story", "cerita", "project"]
 toc: false
 author: "Adwin"
 ---
-**Last edit: 8 November 2026**
+**Last edit: 9 November 2026**
 
-Assalamualaikum, Bismillah, hola, moshi-moshi.
-Observing changes experiences by the body during menstruation will provide important clues about fertility status. One of the most effective and easy to implement methods is to control the body's basal temperature. Basically, basal body temperature (BBT) is a condition where the temperature depends on the lowest level. The future influx is marked by a slight decrease in temperature, followed by a sudden upward rise of 0.2 °C (0.4 °F) for the next 48 hours. Of course the fertile cycle is included in the time series data because the data are interconnected with one another in sequence, arranged from one object consisting of several time periods [^1].
+Assalamualaikum, Bismillah, Hola, Moshi-moshi.
+Observing bodily changes during the menstrual cycle provides critical clues about fertility status. One of the most effective and accessible methods for tracking this is monitoring Basal Body Temperature (BBT). Biologically, the fertile window is often marked by a slight dip in temperature followed by a sustained rise of approximately 0.2°C (0.4°F) lasting at least 48 hours. Since these data points are sequential and interdependent, fertility tracking is essentially a **time-series analysis** problem[^1].
 
-I have an idea from my lecture (Ibu Diah Risqiwati) that we should make a system or tool to close how to know fertility from BBT. She is gave a bunch of journals to me to read. Basically, I have interest to on healthcare technology since I was have a disablity too. My right foot doesn't normal and can't walk properly like a normal human. I have another story about this and if you wanna know more of me, just click [about me!](https://blog.cryppy.id/page/about/). Let's continue into this article, before my lecture gave me this idea, I already tell her my idea and I want to build something technology Internet of Things (IoT) about Neurological Disorder in children but Mrs. Diah thought it will be harder and more pricey because the censor.
+### The Spark: From Neurology to Fertility
 
-Finally after a long discussion with another my lecture (Ibu Lailatul Husniah), they tell me to build a system to observing and predicted fertility based on BBT. The implementation involved two device, first is microcontroller with ESP8266 WiFi and infrared censor (to know the temperature), and second is Web to user login and monitoring their BBT. This is a system called `Si Subur`. What does `Si Subur` mean? In Indonesia, "subur" means fertile, lush, or productive (synonyms include gemuk, gendut, etc.). The "fertility" I want to talk about in this article refers to human fertility.
-![Subur based on KBBI](/image/content/article/the-story-about-si-subur/image-1.png)
+This project began with an idea from my lecturer, Ibu Diah Risqiwati. She encouraged me to build a system that could help women understand their fertility through BBT, providing me with numerous journals to study. 
 
-In English, fertile can mean (of a seed or egg) capable of becoming a new individual, or (of a person, animal, or plant) able to conceive young or produce seed. We Indonesians love naming systems that start with "SI" when they are related to information systems, like SIDesa, SIAkad, SImpatika, or whatever name you can think of. Now, back when I was in college, I often joined competitions like PKM, Gemastik, etc. Initially, I had my own ideas, such as building an IoT device to prevent taxi drivers from getting tired and falling asleep or creating a hat for kids to detect brain disorders. Unfortunately, my lecturer thought those ideas were too difficult to implement, so she gave me a new one the idea of monitoring the menstrual cycle and women's fertility.
+I have had a keen interest in healthcare technology for a long time, partly due to my own physical disability—my right foot doesn't function normally, which affects how I walk. If you want to know more about my personal journey, feel free to check out my [About Me](https://blog.cryppy.id/page/about/) page.
 
-What makes this different from regular menstrual monitoring apps? The difference is in the device. I built a device similar to a thermometer, but the body temperature readings are automatically displayed on the system I developed. So, `Si Subur` essentially consists of two interconnected devices. Ok here is the implementation on microcontroller which is ESP8266 included WiFi communicate with thingspeak channel MQTT to get data
+Before settling on `Si Subur`, I actually pitched a different idea to Ibu Diah: an IoT device for detecting neurological disorders in children. However, after a long discussion with her and another lecturer, Ibu Lailatul Husniah, we concluded that the sensors required would be too expensive and complex for a student project. They steered me toward a more feasible yet impactful alternative: **monitoring the menstrual cycle and predicting fertility using BBT.**
 
-```c
-// Create a WiFi access point and provide a web server on it.
-// Go to http://192.168.4.1 in a web browser connected to this access point to see it.
-// Control LED connected to  GPIO2
+They also introduced me to Bapak Wahyu, who became instrumental in helping me implement the hardware side of this project.
 
+### What is "Si Subur"?
+
+In Indonesian, *"subur"* means fertile, lush, or productive. We Indonesians have a habit of prefixing information systems with "SI" (Sistem Informasi)—think SIDesa, SIAkad, or SImpatika. So, naturally, this became **Si Subur**. Unlike standard period-tracking apps that rely solely on manual calendar inputs, `Si Subur` bridges the physical and digital worlds. It consists of two interconnected components:
+1.  **Hardware:** A custom IoT thermometer using an ESP8266 and an MLX90614 infrared sensor.
+2.  **Software:** A web application for user management, data visualization, and fertility prediction.
+
+![Definition of Subur from KBBI](/image/content/article/the-story-about-si-subur/image-1.png)
+
+### The Hardware: Bringing BBT to the Cloud
+
+The core of the device is the **ESP8266** microcontroller paired with an **MLX90614** non-contact infrared temperature sensor. 
+
+Initially, I prototyped this by creating a local Access Point where users could connect directly to the device to see their temperature. However, to make it a true IoT solution, the data needed to live in the cloud.
+
+I chose **ThingSpeak** as the backend because it specializes in time-series data aggregation and visualization. The ESP8266 reads the object temperature (body heat) and pushes it to a ThingSpeak channel via MQTT/HTTP every 15 seconds—compliant with their free tier rate limits.
+
+Here is a simplified look at how the ESP8266 handles the sensor reading and WiFi connection:
+
+```cpp
 #include <ESP8266WiFi.h>
-#include <WiFiClient.h> 
-#include <ESP8266WebServer.h>
+#include "ThingSpeak.h" // Library for ThingSpeak integration
 #include <Wire.h>
 #include <Adafruit_MLX90614.h>
+
+// Sensor & WiFi Setup
 Adafruit_MLX90614 mlx = Adafruit_MLX90614();
+const char* ssid = "YourWiFiSSID";
+const char* password = "YourWiFiPassword";
+unsigned long myChannelNumber = YOUR_CHANNEL_ID;
+const char * myWriteAPIKey = "YOUR_API_KEY";
 
-int val;
-int i;
-// Set these to your desired AP credentials.
-const char *ssid = "masasubur";                // setting ssid name of our ESP
-const char *password = "masasubur";           // setting password
-
-ESP8266WebServer server(80);
+WiFiClient client;
 
 void setup() {
-  Wire.begin(4, 5);                            // 4 = sda, 5 = scl setting input i2c komunikasi dari sensor MLX (sda scl)
-	delay(1000);
-	Serial.begin(115200);                        // setting baudrate
-       
-       
-	Serial.println();
-	Serial.print("Configuring access point...");
-	WiFi.softAP(ssid);                           // Remove password parameter if you want the AP to be open
-
-	IPAddress myIP = WiFi.softAPIP();
-	Serial.print("AP IP address: ");
-	Serial.println(myIP);
- 
-	server.begin();
-	Serial.println("HTTP server started");
+  Serial.begin(115200);
+  Wire.begin(4, 5); // SDA, SCL for MLX90614
+  
+  // Connect to WiFi (Station Mode for Cloud Access)
+  WiFi.begin(ssid, password);
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+  
+  ThingSpeak.begin(client);
+  Serial.println("Connected to WiFi & ThingSpeak");
 }
 
 void loop() {
- 
- server.handleClient();
-        
-// send data to serial monitor------- 
-
- Serial.print("Ambient = "); Serial.print(mlx.readAmbientTempC()); 
- Serial.print("*C\tObject = "); Serial.print(mlx.readObjectTempC()); Serial.println("*C");
- Serial.print("Ambient = "); Serial.print(mlx.readAmbientTempF()); 
- Serial.print("*F\tObject = "); Serial.print(mlx.readObjectTempF()); Serial.println("*F");
- 
- val=mlx.readObjectTempC(); // GET the calculate of temperature
- Serial.println();
- 
-// data server
-
- server.on("/", [](){  // if you add this subdirectory to your webserver call, you get text below :)
-   String webString="";     // String to display
-   //webString="<FONT SIZE=+4> ESP8266 Wi-Fi webserver suhu dalam Celcius <BR> ";
-   webString +=(val);
-   
-   server.send(200, "text/html", webString);            // send to someones browser when asked
-   
- });
-delay(500);
-
-
+  // Read Object Temperature (Body Temp)
+  float tempC = mlx.readObjectTempC();
+  
+  // Send to ThingSpeak Field 1
+  ThingSpeak.setField(1, tempC);
+  int x = ThingSpeak.writeFields(myChannelNumber, myWriteAPIKey);
+  
+  if(x == 200){
+    Serial.println("Channel update successful.");
+  } else {
+    Serial.println("Problem updating channel. HTTP error code " + String(x));
+  }
+  
+  delay(20000); // ThingSpeak requires ~15s delay between writes
 }
 ```
-### Bring It to the Cloud: ThingSpeak Integration
 
-To make `Si Subur` a true Internet of Things (IoT) device, the temperature data captured by the ESP8266 needs to be sent to a cloud platform for remote monitoring and data logging. For this, I utilized **ThingSpeak**, an IoT analytics platform service that allows us to aggregate, visualize, and analyze live data streams.
+### The Software: A Complete User Experience
 
-While the early prototype relied on a local web server via an Access Point (`WiFi.softAP`), sending data to the cloud requires an active internet connection. Therefore, the ESP8266 configuration must be switched to Station mode (`WiFi.begin`) to connect to a local Wi-Fi router.
+With the data flowing into the cloud, I built the web application using PHP 5.6 and CodeIgniter. The goal was to create a system that wasn't just a dashboard, but a supportive platform for women. 
 
-The integration is simplified using the official `ThingSpeak.h` library. The logic is straightforward: the ESP8266 reads the Basal Body Temperature (BBT) from the MLX90614 sensor, serves the real-time value on a local web page, and securely publishes the data to a specific ThingSpeak Channel Field using a unique `Write API Key` every 15 seconds. This interval complies with ThingSpeak's rate limits for free accounts while providing sequential time-series data sufficient for tracking the user's fertility cycle. Thanks to Bapak Wahya who is my another lecture to helping me a lot to implment this device (`Si Subur`)
+1. The Public Portal
+The main page (si-subur.com) acts as a content hub. It features articles on pre-pregnancy, post-partum care, and general health, serving as an educational resource alongside the tool itself.
 
-### Implementation to Web Application
+![Main page of si-subur.com](/image/content/article/the-story-about-si-subur/image-2.png)
 
-The web application began with a page like a news application or blog, something like that. I built that with PHP 5.6 with codeigniter framework. It serve a content management server where admin can write a news or user experiences about the tools (`Si Subur`). 
-![si-subur.com main page](/image/content/article/the-story-about-si-subur/image-2.png)
+2. Authentication & Profile
+Security and personalization are key. Users register with an email and password. The profile page allows them to manage their credentials and personal details, ensuring their health data remains private.
 
-Since we are successfully get data from the ESP8266 to Thingspeak, we are going to use Thingspeak API to implement that data to web application. The users is a woman who use `Si Subur` which already have an email (username) and password to login.
-![Subur based on KBBI](/image/content/article/the-story-about-si-subur/image-1.png)
+![Login page of si-subur](/image/content/article/the-story-about-si-subur/image-4.png)
+
+![Profile page of si-subur](/image/content/article/the-story-about-si-subur/image-5.png)
+
+3. The Dashboard: Visualizing Fertility
+This is the heart of the system. Once logged in, users are greeted with a dashboard that pulls live data from ThingSpeak.
+- **Cycle Statistics:** A graphical representation of BBT over time.
+- **Ovulation Prediction:** The system analyzes the time-series data to highlight potential ovulation days (e.g., "Hari Ovulasi Di Siklus Berikutnya").
+- **Data Entry:** While the IoT device automates collection, I also included a manual input modal for users to add historical data or correct readings.
+
+![Login page of si-subur](/image/content/article/the-story-about-si-subur/image-3.png)
+
+![Profile page of si-subur](/image/content/article/the-story-about-si-subur/image-6.png)
+
+### Conclusion
+Si Subur was more than just a college assignment; it was a lesson in integrating hardware constraints with software usability. By combining an affordable IR sensor with cloud analytics, we created a tool that makes fertility awareness accessible and data-driven. While the tech stack (PHP 5.6, ESP8266) might seem dated now, the core principle remains relevant: technology should simplify health monitoring, not complicate it.
+
+
+References:
+[^1]: https://www.researchgate.net/publication/348802419_PREDIKSI_MASA_SUBUR_PADA_WANITA_MENGGUNAKAN_PEMODELAN_STATE_SPACE_BERBASIS_SUHU_BASAL_TUBUH/fulltext/601147d792851c2d4df73653/PREDIKSI-MASA-SUBUR-PADA-WANITA-MENGGUNAKAN-PEMODELAN-STATE-SPACE-BERBASIS-SUHU-BASAL-TUBUH.pdf
