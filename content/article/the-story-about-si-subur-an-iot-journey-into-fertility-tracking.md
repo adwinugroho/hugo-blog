@@ -1,5 +1,5 @@
 ---
-title: "The Story About Si Subur: An IoT Journey into Fertility Tracking"
+title: "The Story About Si Subur An IoT Journey into Fertility Tracking"
 date: 2024-09-09T14:06:50+07:00
 draft: false
 

@@ -10,7 +10,7 @@ draft: false
 * [Sekilas Tentang Banking System](https://blog.cryppy.id/article/what-i-learned-sekilas-tentang-banking-system/)
 
 **Story**
-* [A Story About Si Subur](https://blog.cryppy.id/article/the-story-about-si-subur/)
+* [A Story About Si Subur](https://blog.cryppy.id/article/the-story-about-si-subur-an-iot-journey-into-fertility-tracking/)
 * [A Story About PPMS](https://blog.cryppy.id/article/the-story-about-ppms/)
 
 **Tutorial**
