@@ -10,8 +10,8 @@ draft: false
 * [Sekilas Tentang Banking System](https://blog.cryppy.id/article/what-i-learned-sekilas-tentang-banking-system/)
 
 **Story**
-* [A Story About Si Subur](https://blog.cryppy.id/article/the-story-about-si-subur-an-iot-journey-into-fertility-tracking/)
-* [A Story About PPMS](https://blog.cryppy.id/article/the-story-about-ppms/)
+* [Si Subur: An IoT Journey into Fertility Tracking](https://blog.cryppy.id/article/the-story-about-si-subur-an-iot-journey-into-fertility-tracking/)
+* [PPMS: Portable Patient Monitoring System](https://blog.cryppy.id/article/the-story-about-ppms-a-portable-patient-monitoring-system-that-could-help-save-lives/)
 
 **Tutorial**
 * [Golang - Download With File Url](https://blog.cryppy.id/article/download-with-file-url/)
