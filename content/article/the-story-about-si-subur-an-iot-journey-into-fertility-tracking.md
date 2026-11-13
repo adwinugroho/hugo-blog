@@ -118,6 +118,11 @@ This is the heart of the system. Once logged in, users are greeted with a dashbo
 ### Conclusion
 Si Subur was more than just a college assignment; it was a lesson in integrating hardware constraints with software usability. By combining an affordable IR sensor with cloud analytics, we created a tool that makes fertility awareness accessible and data-driven. While the tech stack (PHP 5.6, ESP8266) might seem dated now, the core principle remains relevant: technology should simplify health monitoring, not complicate it.
 
+Here is my full code:
+![Microcontroller ESP8266](https://github.com/adwinugroho/si-subur_iot)
+![PHP Codeigniter](https://github.com/adwinugroho/si-subur)
+
+
 
 References:
 [^1]: https://www.researchgate.net/publication/348802419_PREDIKSI_MASA_SUBUR_PADA_WANITA_MENGGUNAKAN_PEMODELAN_STATE_SPACE_BERBASIS_SUHU_BASAL_TUBUH/fulltext/601147d792851c2d4df73653/PREDIKSI-MASA-SUBUR-PADA-WANITA-MENGGUNAKAN-PEMODELAN-STATE-SPACE-BERBASIS-SUHU-BASAL-TUBUH.pdf
